@@ -1,0 +1,27 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+inline double power(double m, int n=2);
+void display(double);
+
+int main()
+{
+    double m;
+    cout<<"Enter value of m :";
+
+    cin>>m;
+
+    display(m);
+    return 0;
+}
+double power(double m, int n)
+{
+    return pow(m,n);
+}
+void display(double x)
+{
+
+    cout<<"Result is "<<power(x);
+    cout<<endl;
+}
